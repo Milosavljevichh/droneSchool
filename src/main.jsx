@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
 import UserLayout from './pages/UserLayout.jsx';
+import LessonDetails from './pages/LessonDetails.jsx';
 
 const getUserLayout = (page) => <UserLayout>{page}</UserLayout>
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: getUserLayout(<App />),
+  },
+  {
+    path: "/lesson",
+    element: getUserLayout(<LessonDetails />),
   },
 ]);
 
