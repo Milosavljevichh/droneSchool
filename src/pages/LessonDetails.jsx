@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import ListItem from '@mui/material/ListItem';
+import Link from '@mui/material/Link';
 import { Link as ScrollLink } from 'react-scroll'; // For smooth scrolling
 import { border, borderRadius, color, display, fontWeight, height, margin, minHeight, padding, width } from "@mui/system";
 
@@ -57,6 +58,12 @@ export default function LessonDetails() {
     },
     list:{
         marginBottom:"46px",
+    },
+    additionalResource:{
+        color:"#ECEFCA",
+        display:'block',
+        marginY:'32px',
+        textDecoration:'underline'
     }
   }
 
@@ -74,6 +81,7 @@ export default function LessonDetails() {
                 summaryBody.push(element.content)
             }
         })
+        summaryBody.push("Additional Resources")
     }
     setSummaryBody(summaryBody)
   }, [lessonBody])
@@ -93,6 +101,16 @@ export default function LessonDetails() {
         case "image":
             element = <Box sx={{margin:'0 auto', width:'65%'}}><img src={content} alt={alt} style={styles.image} /></Box>
             break;
+        case "additionalResources":
+            element = <Box id="Additional Resources" sx={{backgroundColor:"#54779290", padding:'40px 40px 16px 40px', borderRadius:'10px'}}>
+                <Typography variant="h4" component="h2" sx={styles.subtitle} id={content}>Additional Resources</Typography>
+                {content.map((link)=>(
+                    <Link href={link.link} target="_blank" sx={styles.additionalResource}>
+                        {link.text}
+                    </Link>
+                ))}
+                </Box>
+            break;
         case "list":
             element =
             <List dense={false} sx={styles.list}> 
@@ -107,7 +125,7 @@ export default function LessonDetails() {
     return element
   }
 
-  function generate(element) {
+  function generateSummary(element) {
     return element.map((subtitle, index) =>
         <ListItemButton key={"summary"+index} component={ScrollLink} to={subtitle} smooth={true} duration={500}>
             <ListItemText
@@ -138,7 +156,7 @@ export default function LessonDetails() {
                 <Box sx={{position:'sticky', top:'10vh'}}>
                 <Typography variant="h5"  component="h5" sx={{marginBottom:"26px", fontWeight:'500'}}>Lesson Content</Typography>
                 <List dense={false} sx={styles.summary}>
-                    {generate(summaryBody)}
+                    {generateSummary(summaryBody)}
                 </List>
                 </Box>
             </Box>

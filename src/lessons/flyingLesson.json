@@ -86,6 +86,19 @@
         {
             "type": "paragraph",
             "content": "It is recommended to practice flying the drone in a large, open space to minimize the risk of collisions with obstacles. Familiarizing oneself with the joysticks and how the drone responds to inputs is crucial for safe operation and effective maneuvering.Understanding the spatial dynamics of the drone, including how it appears from a distance, helps prevent accidents and crashes."
+        },
+        {
+            "type":"additionalResources",
+            "content":[
+                {
+                    "text":"How to fly a drone - Multirotor systems",
+                    "link":"https://uavcoach.com/how-to-fly-a-quadcopter-guide/"
+                },
+                {
+                    "text":"What To Know About Drones - FAA",
+                    "link":"https://www.faa.gov/newsroom/what-know-about-drones"
+                }
+            ]
         }
     ]
 }
