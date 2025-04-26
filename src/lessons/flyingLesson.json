@@ -2,8 +2,29 @@
     "title":"Start Flying",
     "body":[
         {
+            "type": "subtitle",
+            "content": "Introduction"
+        },
+        {
             "type": "paragraph",
             "content": "Most drones come with a standard configuration that can be customized according to user preference. The primary focus of operating a drone is understanding how to manipulate its flight controls, which are primarily found on the controller."
+        },
+        {
+            "type": "subtitle",
+            "content": "Overview"
+        },
+        {
+            "type": "overviewParagraph",
+            "content":"This section contains a general overview of topics that you will learn in this lesson."
+        },
+        {
+            "type": "list",
+            "content":[
+                "Master Drone Controls",
+                "Handle the Gimbal",
+                "Use Safety and Special Functions",
+                "Build Skill Through Practice"
+            ]
         },
         {
             "type": "subtitle",
@@ -11,7 +32,15 @@
         },
         {
             "type": "paragraph",
-            "content": "The controller features two joysticks, with the left joystick responsible for vertical movement and rotation. Pushing the left joystick up causes the drone to ascend, while pulling it down results in descent. Moving the left joystick left or right causes the drone to pivot around its vertical axis without changing its position on the ground. he right joystick controls horizontal movement; pushing it forward makes the drone move in that direction, while pulling it back makes it move backward. Moving the right joystick left or right directs the drone to move laterally in those respective directions. A combination of both joysticks is essential for maneuvering the drone effectively and capturing high-quality footage."
+            "content": "The controller features two joysticks, with the left joystick responsible for vertical movement and rotation. Pushing the left joystick up causes the drone to ascend, while pulling it down results in descent. Moving the left joystick left or right causes the drone to pivot around its vertical axis without changing its position on the ground."
+        },
+        {
+            "type": "paragraph",
+            "content": "The right joystick controls horizontal movement; pushing it forward makes the drone move in that direction, while pulling it back makes it move backward. Moving the right joystick left or right directs the drone to move laterally in those respective directions."
+        },
+        {
+            "type": "paragraph",
+            "content": "A combination of both joysticks is essential for maneuvering the drone effectively and capturing high-quality footage."
         },
         {
             "type": "image",
@@ -24,7 +53,39 @@
         },
         {
             "type": "paragraph",
-            "content": "Most drone controllers include a gimbal control feature, typically located in the upper left corner of the controller. The gimbal can be adjusted to tilt from straight ahead to directly downward, with some advanced models allowing for a tilt beyond 90 degrees. Many new drones are equipped with gimbals that can point slightly upward, enhancing the range of shooting angles. Some controllers allow for a full 360-degree rotation of the gimbal, providing even greater versatility in capturing images and videos. The gimbal control is often a jog wheel that can be manipulated to change the angle of the camera quickly, depending on the pressure applied. Users can customize gimbal settings through software to adjust the speed of the gimbal movements for smoother footage."
+            "content": "Most drone controllers include a gimbal control feature, typically located in the upper left corner of the controller. The gimbal can be adjusted to tilt from straight ahead to directly downward, with some advanced models allowing for a tilt beyond 90 degrees. Many new drones are equipped with gimbals that can point slightly upward, enhancing the range of shooting angles."
+        },
+        {
+            "type": "paragraph",
+            "content": "Some controllers allow for a full 360-degree rotation of the gimbal, providing even greater versatility in capturing images and videos. The gimbal control is often a jog wheel that can be manipulated to change the angle of the camera quickly, depending on the pressure applied. Users can customize gimbal settings through software to adjust the speed of the gimbal movements for smoother footage."
+        },
+        {
+            "type": "subtitle",
+            "content": "Controller Functions and Safety Features"
+        },
+        {
+            "type": "paragraph",
+            "content": "DJI controllers feature a speed adjustment setting that allows users to switch between slow, normal, and fast flight modes. A return-to-home button is included, which directs the drone to its original takeoff GPS location with a simple press."
+        },
+        {
+            "type": "paragraph",
+            "content": "It is important to set a safe return altitude, especially in areas with obstacles like trees, to ensure the drone does not collide during its return. The return-to-home function may not be ideal when the drone is in motion, necessitating manual navigation in some situations."
+        },
+        {
+            "type": "paragraph",
+            "content": "A customizable function button can be programmed to perform various tasks, such as quickly adjusting the gimbal position for immediate access to specific angles. Using the function button can streamline operations, especially when shooting footage that requires rapid adjustments."
+        },
+        {
+            "type": "subtitle",
+            "content": "Practice and Familiarization"
+        },
+        {
+            "type": "paragraph",
+            "content": "New pilots should take time to learn how to control the drone in various scenarios to build confidence and skill. Practicing in open fields allows users to develop their flying abilities without the pressure of avoiding obstacles."
+        },
+        {
+            "type": "paragraph",
+            "content": "It is recommended to practice flying the drone in a large, open space to minimize the risk of collisions with obstacles. Familiarizing oneself with the joysticks and how the drone responds to inputs is crucial for safe operation and effective maneuvering.Understanding the spatial dynamics of the drone, including how it appears from a distance, helps prevent accidents and crashes."
         }
     ]
 }
