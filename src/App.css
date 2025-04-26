@@ -1,4 +1,16 @@
+
+@font-face {
+  font-family: Nunito;
+  src: url(/public/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: Nunito !important;
+}
+
+body {
+  background: #213448;
+background: linear-gradient(180deg, rgba(33, 52, 72, 1) 15%, rgba(12, 114, 156, 1) 100%);
 }

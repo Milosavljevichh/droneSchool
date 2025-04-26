@@ -13,7 +13,7 @@ export default function LessonsPage(){
             gap:'2.5%'
         }
     }
-    console.log(lessons)
+    
     return(
         <Box sx={styles.lessonContainer}>
             {/* <LessonCard

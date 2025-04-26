@@ -1,9 +1,9 @@
 import { Box, Typography, Button } from "@mui/material"
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import { Link } from "react-router-dom"; // <-- important
+import { Link } from "react-router-dom"; 
 
 
-export default function LessonCard({id, cover, title, description, duration, level, key}){
+export default function LessonCard({id, cover, title, description, duration, level}){
 
     const styles={
         card:{
@@ -13,11 +13,14 @@ export default function LessonCard({id, cover, title, description, duration, lev
             boxShadow: "-4px 17px 18px -3px rgba(0, 0, 0, 0.38)",
             borderRadius:'12px',
             overflow:'hidden',
+            backgroundColor:"#ECEFCA",
+            color:"#06202B"
         },
         cover:{
             height:'40%',
             width:'100%',
-            marginBottom:'12px'
+            marginBottom:'12px',
+            borderBottom:'2px #4A90E2 solid',
         },
         title:{
             fontSize:'1.1rem',
@@ -34,7 +37,7 @@ export default function LessonCard({id, cover, title, description, duration, lev
     }
 
     return(
-        <Box sx={styles.card} key={key}>
+        <Box sx={styles.card}>
             <img src={cover} alt="Lesson Cover" style={styles.cover} />
             <Box sx={{
                     height: `calc(100% - ${parseInt(styles.cover.height)}% - 32px)`
