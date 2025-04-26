@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     element: getUserLayout(<App />),
   },
   {
-    path: "/lesson",
+    path: "/lessons/:lessonId",
     element: getUserLayout(<LessonDetails />),
   },
 ]);

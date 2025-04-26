@@ -1,0 +1,29 @@
+{
+    "title":"Drone Selection",
+    "body":[
+        {
+            "type": "paragraph",
+            "content": "Drones are categorized into two main types: camera drones and FPV (First Person View) drones."
+        },
+        {
+            "type": "subtitle",
+            "content": "Camera Drones"
+        },
+        {
+            "type": "paragraph",
+            "content": "Camera drones are designed for stability, featuring GPS stabilization and a 3-axis gimbal for smooth footage. These drones are typically controlled via handheld controllers with screens and are ideal for standard drone footage."
+        },
+        {
+            "type": "subtitle",
+            "content": "FPV Drones"
+        },
+        {
+            "type": "paragraph",
+            "content": "Conversely, FPV drones provide a more immersive flying experience, allowing users to see the drone's perspective through goggles and requiring manual control. FPV drones lack mechanical stabilization, making them more challenging to fly and often necessitating prior practice in simulators."
+        },
+        {
+            "type": "paragraph",
+            "content":"While some FPV drones have hybrid features, the focus of the video is primarily on camera drones."
+        }
+    ]
+}

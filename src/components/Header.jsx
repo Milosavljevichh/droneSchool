@@ -7,7 +7,7 @@ export default function Header(){
     const styles = {
         header:{
             height:'8vh',
-            width:'87%',
+            // width:'87%',
             backgroundColor:'#4A90E2',
             display:'flex',
             alignItems:'center',
