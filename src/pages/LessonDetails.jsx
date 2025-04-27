@@ -53,7 +53,7 @@ export default function LessonDetails() {
     image:{
         width:'100%',
         borderRadius:'12px',
-        border:'2px solid #ECEFCA',
+        // border:'2px solid #ECEFCA',
         marginBottom:"46px"
     },
     list:{
@@ -99,7 +99,28 @@ export default function LessonDetails() {
             element = <Typography variant="h4" component="h2" sx={styles.subtitle} id={content}>{content}</Typography>
             break;
         case "image":
-            element = <Box sx={{margin:'0 auto', width:'65%'}}><img src={content} alt={alt} style={styles.image} /></Box>
+            element = <Box sx={{margin:'0 auto', width:'100%'}}><img src={content} alt={alt} style={styles.image} /></Box>
+            break;
+        case "assignment":
+            element = <List sx={{margin:'0 auto', width:'100%'}}>
+                        {content.map((assignmentDetails)=>(
+                            assignmentDetails.type === "video" ? (
+                                <ListItem  sx={{ display: 'list-item', listStyleType: 'decimal', pl: 0, marginLeft:'32px' }}>
+                                    <ListItemText primary={assignmentDetails.text} />
+                                    <iframe
+                                    width="633"
+                                    height="380"
+                                    src={`https://www.youtube.com/embed/${assignmentDetails.link}`}
+                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                    title="Embedded youtube"
+                                    loading="lazy"
+                                    />
+                                </ListItem>
+                            ) :
+                            null
+                        ))}
+                      </List>
             break;
         case "additionalResources":
             element = <Box id="Additional Resources" sx={{backgroundColor:"#54779290", padding:'40px 40px 16px 40px', borderRadius:'10px'}}>

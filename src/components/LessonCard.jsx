@@ -67,6 +67,9 @@ export default function LessonCard({id, cover, title, description, duration, lev
                         sx={{display:'block',margin:'0 auto', width:'100%', marginY:'16px'}}      
                         component={Link}
                         to={`/lessons/${id}`} 
+                        onClick={()=>{
+                        window.scrollTo(0, 0);
+                        }}
                         >
                             View Lesson
                         </Button>

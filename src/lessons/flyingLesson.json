@@ -44,8 +44,8 @@
         },
         {
             "type": "image",
-            "content": "/lessonImages/joystick.jpg",
-            "alt": "drone joytsick"
+            "content": "/lessonImages/joystick_visual.png",
+            "alt": "joystick visual"
         },
         {
             "type": "subtitle",
@@ -62,6 +62,11 @@
         {
             "type": "subtitle",
             "content": "Controller Functions and Safety Features"
+        },
+        {
+            "type": "image",
+            "content": "/lessonImages/safety_visual.png",
+            "alt": "drone safety visual"
         },
         {
             "type": "paragraph",
@@ -86,6 +91,20 @@
         {
             "type": "paragraph",
             "content": "It is recommended to practice flying the drone in a large, open space to minimize the risk of collisions with obstacles. Familiarizing oneself with the joysticks and how the drone responds to inputs is crucial for safe operation and effective maneuvering.Understanding the spatial dynamics of the drone, including how it appears from a distance, helps prevent accidents and crashes."
+        },
+        {
+            "type": "subtitle",
+            "content": "Assignment"
+        },
+        {
+            "type": "assignment",
+            "content": [
+                {
+                    "type":"video",
+                    "text":"Watch this video on drone flying and follow along in a safe enviroment.",
+                    "link":"1tnc0Vx3sXU"
+                }
+            ]
         },
         {
             "type":"additionalResources",
