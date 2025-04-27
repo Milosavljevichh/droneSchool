@@ -5,9 +5,7 @@ export default function UserLayout({children}){
     return(
         <>
             <Header />
-            <Box>
                 {children}
-            </Box>
         </>
     )
 }

@@ -7,20 +7,24 @@ export default function LessonCard({id, cover, title, description, duration, lev
 
     const styles={
         card:{
-            width:'fit-content',
-            height:'100%',
+            boxSizing:'border-box',
+            maxWidth:'32%',
+            height:'fit-content',
             border:'2px #4A90E2 solid',
             boxShadow: "-4px 17px 18px -3px rgba(0, 0, 0, 0.38)",
             borderRadius:'12px',
-            overflow:'hidden',
             backgroundColor:"#ECEFCA",
-            color:"#06202B"
+            color:"#06202B",
+            overflow:'hidden',
+            marginBottom:'32px'
         },
         cover:{
             height:'40%',
             width:'100%',
             marginBottom:'12px',
             borderBottom:'2px #4A90E2 solid',
+            borderRadius:'10px 10px 0 0',
+            width: '100%', objectFit: 'cover', aspectRatio: '16/9'
         },
         title:{
             fontSize:'1.1rem',
@@ -32,19 +36,16 @@ export default function LessonCard({id, cover, title, description, duration, lev
             display: '-webkit-box',
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
-            WebkitLineClamp: 5, // Limit to 5 lines
+            WebkitLineClamp: 'clamp(2, 3, 4)', 
         }
     }
 
     return(
         <Box sx={styles.card}>
             <img src={cover} alt="Lesson Cover" style={styles.cover} />
-            <Box sx={{
-                    height: `calc(100% - ${parseInt(styles.cover.height)}% - 32px)`
-                }}>
                 <Box sx={{
                 paddingX:'10px',
-                height:'100%',
+                height:'fit-content',
                 display:'flex',
                 flexDirection:'column',
                 justifyContent:'space-between',
@@ -75,7 +76,6 @@ export default function LessonCard({id, cover, title, description, duration, lev
                         </Button>
                     </Box>
                 </Box>
-            </Box>
         </Box>
     )
 }
