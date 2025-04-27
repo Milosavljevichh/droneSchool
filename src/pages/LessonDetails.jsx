@@ -102,20 +102,24 @@ export default function LessonDetails() {
             element = <Box sx={{margin:'0 auto', width:'100%'}}><img src={content} alt={alt} style={styles.image} /></Box>
             break;
         case "assignment":
-            element = <List sx={{margin:'0 auto', width:'100%'}}>
-                        {content.map((assignmentDetails)=>(
+            element = <List sx={{width:'fit-content',backgroundColor:"#54779290", padding:'40px 65px', borderRadius:'10px', marginBottom:'32px' }}> 
+                        {content.map((assignmentDetails, index)=>(
                             assignmentDetails.type === "video" ? (
-                                <ListItem  sx={{ display: 'list-item', listStyleType: 'decimal', pl: 0, marginLeft:'32px' }}>
+                                <ListItem  sx={{ display: 'list-item', listStyleType: 'decimal', padding: 0, marginLeft:'32px', 
+                                    marginBottom: index === content.length - 1 ? '0' : '32px'
+                                    }}>
                                     <ListItemText primary={assignmentDetails.text} />
-                                    <iframe
-                                    width="633"
-                                    height="380"
-                                    src={`https://www.youtube.com/embed/${assignmentDetails.link}`}
-                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                    title="Embedded youtube"
-                                    loading="lazy"
-                                    />
+                                    {assignmentDetails.link ? (
+                                        <iframe
+                                        width="533"
+                                        height="330"
+                                        src={`https://www.youtube.com/embed/${assignmentDetails.link}`}
+                                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                        title="Embedded youtube"
+                                        loading="lazy"
+                                        />
+                                    ) : null}
                                 </ListItem>
                             ) :
                             null
@@ -123,7 +127,7 @@ export default function LessonDetails() {
                       </List>
             break;
         case "additionalResources":
-            element = <Box id="Additional Resources" sx={{backgroundColor:"#54779290", padding:'40px 40px 16px 40px', borderRadius:'10px'}}>
+            element = <Box id="Additional Resources">
                 <Typography variant="h4" component="h2" sx={styles.subtitle} id={content}>Additional Resources</Typography>
                 {content.map((link)=>(
                     <Link href={link.link} target="_blank" sx={styles.additionalResource}>

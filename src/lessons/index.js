@@ -3,7 +3,7 @@ import { duration } from '@mui/material';
 export const lessons = [
     {
       id: "lessonTest",
-      cover:"/coverImages/dummy.jpg",
+      cover:"/coverImages/drone.jpg",
       title: "Drone Selection",
       description: "In this lesson, we will be addressing common questions about purchasing a drone, including which model offers the best value and what features are essential.",
       duration:"90",
