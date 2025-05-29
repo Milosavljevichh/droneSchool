@@ -24,7 +24,7 @@ export default function LessonDetails() {
 
   const styles = {
     page:{
-        padding:'10vh 7vw 10vh 13vw',
+        padding:'17vh 7vw 10vh 13vw',
         minHeight:'100vh',
         height:'fit-content',
         color:"#ECEFCA"
