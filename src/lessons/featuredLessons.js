@@ -1,5 +1,4 @@
 
-
 export const lessons = [
     {
       id: "lessonTest",
@@ -10,6 +9,16 @@ export const lessons = [
       level:"Beginner",
       path: "/lessons/lessonTest",
       file: () => import('./lessonTest.json')
+    },
+    {
+      id: "flyingDrones",
+      cover:"/coverImages/flyCover.jpg",
+      title: "Start Flying",
+      description: "The primary focus of operating a drone is understanding how to manipulate its flight controls, which are primarily found on the controller.",
+      duration:"15",
+      level:"Beginner",
+      path: "/lessons/lessonTest",
+      file: () => import('./flyingLesson.json')
     },
     {
       id: "flyingDrones",

@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import SocialMediaBar from "./SocialMediaBar";
-import InfoSection from "./InfoSection";
 
 const styles = {
   container: {
@@ -70,7 +69,6 @@ const styles = {
 
 const HeroSection = () => {
   return (
-    <>
     <Box style={styles.container}>
       <Box style={styles.overlay}></Box>
       <Box style={styles.content}>
@@ -95,8 +93,6 @@ const HeroSection = () => {
       </Box>
       <SocialMediaBar />
     </Box>
-    <InfoSection />
-    </>
   );
 };
 

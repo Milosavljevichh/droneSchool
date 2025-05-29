@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 // import LessonsPage from './pages/LessonsPage.jsx';
-import HeroSection from './components/HeroSection'
+import HomePage from './pages/HomePage'
 
 function App() {
 
   return (
       // <LessonsPage />
-      <HeroSection />
+      <HomePage />
   )
 }
 

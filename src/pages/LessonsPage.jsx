@@ -20,19 +20,19 @@ export default function LessonsPage(){
     return(
         <Box sx={{
             padding:'2vh 6.5vw', width:'fit-content', height:'fit-content', display:'flex', justifyContent:'center'}}>
-        <Box sx={styles.lessonContainer}>
-            {lessons.map((lesson)=>(
-                <LessonCard
-                key={lesson.id}
-                id={lesson.id}
-                cover={lesson.cover}
-                title={lesson.title}
-                description={lesson.description}
-                duration={lesson.duration}
-                level={lesson.level}
-                />
-            ))}
-        </Box>
+            <Box sx={styles.lessonContainer}>
+                {lessons.map((lesson)=>(
+                    <LessonCard
+                    key={lesson.id}
+                    id={lesson.id}
+                    cover={lesson.cover}
+                    title={lesson.title}
+                    description={lesson.description}
+                    duration={lesson.duration}
+                    level={lesson.level}
+                    />
+                ))}
+            </Box>
         </Box>
     )
 }

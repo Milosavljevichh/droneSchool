@@ -5,12 +5,12 @@ export default function InfoSection(){
 
     const styles = {
         container:{
-            padding:'5vh 48px',
+            padding:'5vh 10vw',
             display:'flex',
             flexAlign:'center',
             justifyContent:'center',
             flexWrap:'wrap',
-            gap:'50px'
+            gap:'2%'
         }
     }
 
