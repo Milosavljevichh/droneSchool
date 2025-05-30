@@ -5,7 +5,7 @@ export default function InfoSection(){
 
     const styles = {
         container:{
-            padding:'5vh 10vw',
+            padding:'9vh 10vw',
             display:'flex',
             flexAlign:'center',
             justifyContent:'center',

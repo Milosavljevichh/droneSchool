@@ -1,6 +1,7 @@
 import HeroSection from "../components/HeroSection"
 import InfoSection from "../components/InfoSection"
 import FeaturedSection from "../components/FeaturedSection"
+import ContactSection from "../components/ContactSection"
 import { Box } from "@mui/material"
 
 export default function HomePage(){
@@ -10,6 +11,7 @@ export default function HomePage(){
             <HeroSection />
             <InfoSection />
             <FeaturedSection />
+            <ContactSection />
         </Box>
     )
 }
