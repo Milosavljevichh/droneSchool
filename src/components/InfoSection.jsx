@@ -1,5 +1,7 @@
 import { Box } from "@mui/material"
 import InfoCard from "./InfoCard"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserTie, faShieldHalved, faGamepad } from '@fortawesome/free-solid-svg-icons';
 
 export default function InfoSection(){
 
@@ -16,17 +18,17 @@ export default function InfoSection(){
 
     const cardContent = [
         {
-            iconPath: '' ,
+            iconPath: <FontAwesomeIcon icon={faUserTie} style={{ fontSize: '36px', color: '#2563eb' }} /> ,
             title: 'Professional Instructors' ,
             description: 'Learn from Celestial Solutions certified experts with years of experience'
         },
         {
-            iconPath: '' ,
+            iconPath: <FontAwesomeIcon icon={faGamepad} style={{ fontSize: '36px', color: '#2563eb' }} /> ,
             title: 'Hands-on Training' ,
             description: 'Get real flight experience with our advanced drone fleet'
         },
         {
-            iconPath: '' ,
+            iconPath: <FontAwesomeIcon icon={faShieldHalved} style={{ fontSize: '36px', color: '#2563eb' }} /> ,
             title: 'Safety First' ,
             description: 'Industry-leading safety training and protocols'
         },

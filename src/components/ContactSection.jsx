@@ -1,5 +1,7 @@
 import { Box, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function ContactSection(){
     const styles = {
@@ -26,8 +28,8 @@ export default function ContactSection(){
             <Typography variant="h4" sx={{color:'white', marginBottom:'3vh'}}>Ready to Take Flight with Celestial Solutions?</Typography>
             <Typography variant="subtitle1" sx={{color:'white', marginBottom:'3vh'}}>Contact us today to begin your professional drone training journey</Typography>
             <Box sx={styles.linksContainer}>
-                <Button to={""} sx={{fontWeight:'bold', color:'white', textDecoration:'underline'}  }>(+381) 63 1811 115</Button>
-                <Button to={"mailto:office@celestial-solutions.net"} sx={{fontWeight:'bold', color:'white', textDecoration:'underline'} }>office@celestial-solutions.net</Button>
+                <Button to={""} sx={{fontWeight:'bold', color:'white', textDecoration:'underline'}  }>{<FontAwesomeIcon icon={faPhone} style={{ fontSize: '18px', color: '#fff', marginRight:'8px' }} />}(+381) 63 1811 115</Button>
+                <Button to={"mailto:office@celestial-solutions.net"} sx={{fontWeight:'bold', color:'white', textDecoration:'underline'} }>{<FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '18px', color: '#fff', marginRight:'8px' }} />}office@celestial-solutions.net</Button>
             </Box>
             <Button 
             variant="contained"
