@@ -6,6 +6,7 @@ import App from './App.jsx'
 import UserLayout from './pages/UserLayout.jsx';
 import LessonDetails from './pages/LessonDetails.jsx';
 import LessonsPage from './pages/LessonsPage.jsx';
+import PaymentPlanPage from './pages/PaymentPlansPage.jsx';
 
 const getUserLayout = (page) => <UserLayout>{page}</UserLayout>
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/lessons",
     element: getUserLayout(<LessonsPage />)
+  },
+  {
+    path: "/payment_plans",
+    element: getUserLayout(<PaymentPlanPage />)
   }
 ]);
 

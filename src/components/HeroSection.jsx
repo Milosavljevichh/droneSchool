@@ -49,6 +49,7 @@ const styles = {
   },
   button: {
     padding: "12px 24px",
+    width:'220px',
     borderRadius: "25px",
     border: "none",
     fontWeight: "600",
@@ -58,11 +59,11 @@ const styles = {
     transition: "background-color 0.3s ease",
   },
   primary: {
-    backgroundColor: "#2563eb",
+    backgroundColor: "#5C9BE5",
     color: "white",
   },
   secondary: {
-    backgroundColor: "#1e293b",
+    backgroundColor: "#5C9BE5",
     color: "white",
   },
 };
@@ -84,7 +85,7 @@ const HeroSection = () => {
             Start Your Journey
           </button>
           <button style={{ ...styles.button, ...styles.secondary }}>
-            🧑‍✈️ Meet Celestial Drone Expert
+            Meet the Experts
           </button>
           <button style={{ ...styles.button, ...styles.secondary }}>
             Need Help
