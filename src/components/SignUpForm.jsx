@@ -75,9 +75,9 @@ export default function SignUpForm() {
     return (
         <Box sx={styles.container}>
             <Box sx={styles.headerBox}>
-                <Typography variant="h5" fontWeight="bold">Login</Typography>
+                <Typography variant="h5" fontWeight="bold">Sign up</Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Enter your details to login.
+                    Enter your details to sign up.
                 </Typography>
             </Box>
 

@@ -35,7 +35,7 @@ export default function ContactSection(){
             variant="contained"
             sx={styles.btn}      
             component={Link}
-            to={`/lessons/`} 
+            to={`/sign_up`} 
             onClick={()=>{
             window.scrollTo(0, 0);
             }}
