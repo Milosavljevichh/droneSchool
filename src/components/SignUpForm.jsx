@@ -39,15 +39,23 @@ const styles = {
     },
 };
 
-export default function LoginForm() {
+export default function SignUpForm() {
+    const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const [usernameError, setUsernameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^(?=.*\d)[A-Za-z\d]{6,}$/;
+    const usernameRegex = /^[a-zA-Z0-9]{3,12}$/;
+
+    const checkUsername = () => {
+        const isUsernameValid = usernameRegex.test(username);
+        setUsernameError(!isUsernameValid);
+    }
 
     const checkEmail = () => {
         const isEmailValid = emailRegex.test(email);
@@ -75,6 +83,18 @@ export default function LoginForm() {
 
             <TextField
                 fullWidth
+                label="Username"
+                variant="outlined"
+                margin="normal"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                onBlur={()=>checkUsername()}
+                error={usernameError}
+                helperText={usernameError ? "Must be 12 or less and 3 or more characters." : ""}
+            />
+
+            <TextField
+                fullWidth
                 label="Email"
                 variant="outlined"
                 margin="normal"
@@ -96,20 +116,10 @@ export default function LoginForm() {
                 onBlur={()=>checkPassword()}
                 error={passwordError}
                 helperText={passwordError ? "Password must be at least 6 characters and contain a number." : ""}
-        
-                InputProps={{
-                    endAdornment: (
-                        <InputAdornment position="end">
-                            <Typography variant="body2" color="primary" sx={styles.forgotPassword}>
-                                Forgot password?
-                            </Typography>
-                        </InputAdornment>
-                    ),
-                }}
             />
 
             <Button fullWidth variant="contained" sx={styles.loginButton} onClick={handleLogin}>
-                Log In
+                Sign up
             </Button>
 
             <Divider sx={styles.divider}>OR</Divider>
@@ -126,8 +136,8 @@ export default function LoginForm() {
 
             <Typography sx={styles.signupText}>
                 Don’t have an account?{' '}
-                <Link href="/sign_up" color="primary" fontWeight="bold" sx={styles.signupLink}>
-                    Sign up
+                <Link href="/log_in" color="primary" fontWeight="bold" sx={styles.signupLink}>
+                    Log in
                 </Link>
             </Typography>
         </Box>

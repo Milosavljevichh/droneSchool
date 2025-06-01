@@ -8,6 +8,7 @@ import LessonDetails from './pages/LessonDetails.jsx';
 import LessonsPage from './pages/LessonsPage.jsx';
 import PaymentPlanPage from './pages/PaymentPlansPage.jsx';
 import LogInPage from './pages/LogInPage.jsx';
+import SignUpPage from './pages/SignUpPage.jsx';
 
 const getUserLayout = (page) => <UserLayout>{page}</UserLayout>
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/log_in",
     element: getUserLayout(<LogInPage />)
+  },
+  {
+    path: "/sign_up",
+    element: getUserLayout(<SignUpPage />)
   }
 ]);
 
