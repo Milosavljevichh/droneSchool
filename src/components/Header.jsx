@@ -17,7 +17,6 @@ export default function Header(){
             position:'absolute',
             top:'0',
             left:'0',
-            // backgroundColor:'#4A90E2',
             backgroundColor: isHome ? "transparent" : "#4A90E2",
             display:'flex',
             alignItems:'center',

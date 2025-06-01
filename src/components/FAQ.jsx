@@ -66,6 +66,7 @@ export default function FAQSection() {
 
   return (
     <Box sx={styles.container}>
+      <Typography variant="h3" sx={{textAlign:'center', color:'white', marginBottom:'32px'}}>FAQ</Typography>
       {faqData.map((item, index) => {
         const panelId = `panel-${index}`;
         return (

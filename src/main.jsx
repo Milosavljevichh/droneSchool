@@ -7,6 +7,7 @@ import UserLayout from './pages/UserLayout.jsx';
 import LessonDetails from './pages/LessonDetails.jsx';
 import LessonsPage from './pages/LessonsPage.jsx';
 import PaymentPlanPage from './pages/PaymentPlansPage.jsx';
+import LogInPage from './pages/LogInPage.jsx';
 
 const getUserLayout = (page) => <UserLayout>{page}</UserLayout>
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/payment_plans",
     element: getUserLayout(<PaymentPlanPage />)
+  },
+  {
+    path: "/log_in",
+    element: getUserLayout(<LogInPage />)
   }
 ]);
 
