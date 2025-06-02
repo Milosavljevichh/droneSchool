@@ -92,6 +92,9 @@ export default function Header() {
                 <Link component={RouterLink} to="/" sx={styles.navLink}>
                 Home
                 </Link>
+                <Link component={RouterLink} to="/lessons/" sx={styles.navLink}>
+                Lessons
+                </Link>
                 <Link component={RouterLink} to="/payment_plans" sx={styles.navLink}>
                 Plans
                 </Link>
