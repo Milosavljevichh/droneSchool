@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import SocialMediaBar from "./SocialMediaBar";
+import { useNavigate } from "react-router-dom";
 
 const styles = {
   container: {
@@ -69,6 +70,7 @@ const styles = {
 };
 
 const HeroSection = () => {
+  const navigate = useNavigate()
   return (
     <Box style={styles.container}>
       <Box style={styles.overlay}></Box>
@@ -81,15 +83,25 @@ const HeroSection = () => {
           <a href="lessons" style={styles.link}>aerial photography</a>.
         </p>
         <Box style={styles.buttonGroup}>
-          <button style={{ ...styles.button, ...styles.primary }}>
+          <button onClick={() => navigate("/lessons")} style={{ ...styles.button, ...styles.primary }}>
             Start Your Journey
           </button>
-          <button style={{ ...styles.button, ...styles.secondary }}>
+          <a
+            href="https://celestial-solutions.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ ...styles.button, ...styles.secondary, textAlign: "center", textDecoration: "none" }}
+          >
             Meet the Experts
-          </button>
-          <button style={{ ...styles.button, ...styles.secondary }}>
+          </a>
+          <a
+            href="https://celestial-solutions.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ ...styles.button, ...styles.secondary, textAlign: "center", textDecoration: "none" }}
+          >
             Need Help?
-          </button>
+          </a>
         </Box>
       </Box>
       <SocialMediaBar />
