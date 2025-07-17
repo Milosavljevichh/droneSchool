@@ -98,7 +98,7 @@ export default function Header() {
                 <Link component={RouterLink} to="/payment_plans" sx={styles.navLink}>
                 Plans
                 </Link>
-                <Link component={RouterLink} to="/about" sx={styles.navLink}>
+                <Link component={RouterLink} to="https://celestial-solutions.net/" target="_blank" sx={styles.navLink}>
                 About Us
                 </Link>
                 <Link href="https://celestial-solutions.net/" target="_blank" rel="noopener" sx={styles.navLink}>
