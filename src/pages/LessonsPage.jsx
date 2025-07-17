@@ -40,7 +40,7 @@ export default function LessonsPage(){
             flexDirection:'column',
             alignItems:'center'
             }}>
-                <Button component={Link} href="log_in" variant="outline" sx={styles.logInButton}>
+                <Button component={Link} href="/create_lesson" variant="outline" sx={styles.logInButton}>
                     New Lesson
                 </Button>
                 <Box sx={styles.lessonContainer}>

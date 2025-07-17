@@ -107,10 +107,10 @@ export default function Header() {
             </Box>
             </Box>
             <Box sx={{display:'flex', gap:'18px'}}>
-                <Button component={Link} href="log_in" variant="outline" sx={styles.logInButton}>
+                <Button component={Link} href="/log_in" variant="outline" sx={styles.logInButton}>
                     Log in
                 </Button>
-                <Button component={Link} href="sign_up" sx={styles.signUpButton}>
+                <Button component={Link} href="/sign_up" sx={styles.signUpButton}>
                     Sign up
                 </Button>
             </Box>
